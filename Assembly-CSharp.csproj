@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D4F0A0F5-0A79-22FC-2C37-16BAC0CB5B3D}</ProjectGuid>
+    <ProjectGuid>{79F3C6D8-9449-0ADE-9B24-C54F64854752}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Skripti\AinuParsledzejs.cs" />
+     <Compile Include="Assets\Skripti\AtteluParadisana.cs" />
      <Compile Include="Assets\Skripti\VardaParadisana.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Ainas/Sakums.unity
+- path: Assets/Ainas/Elementu-aina.unity
   isLoaded: 1
   isActive: 1
