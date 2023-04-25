@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Skripti\AinuParsledzejs.cs" />
      <Compile Include="Assets\Skripti\AtteluParadisana.cs" />
+     <Compile Include="Assets\Skripti\ObjektuParvietosana.cs" />
      <Compile Include="Assets\Skripti\VardaParadisana.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

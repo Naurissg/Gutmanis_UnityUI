@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class AtteluParadisana : MonoBehaviour {
-	public GameObject JackSparrow;
-	public GameObject BusinessMan;
-	public GameObject Joe;
+	public GameObject cilveks;
 	public GameObject krekls;
 	public GameObject Bikses;
 	public GameObject kurpes;
-	public GameObject cepure;
+	public GameObject Cepure;
+	public GameObject Zobens;
 	public GameObject paKreisi;
 	public GameObject paLabi;
 	public GameObject kurRadit;
@@ -18,9 +17,9 @@ public class AtteluParadisana : MonoBehaviour {
 	public GameObject slaideris1;
 	public GameObject slaideris2;
 
-	public void binaAttelosana(bool vertiba)
+	public void cilvekaAttelosana(bool vertiba)
 	{
-		JackSparrow.SetActive(vertiba);
+		cilveks.SetActive(vertiba);
 		paKreisi.GetComponent<Toggle>().interactable = vertiba;
 		paLabi.GetComponent<Toggle>().interactable = vertiba;
 	}
@@ -41,16 +40,20 @@ public class AtteluParadisana : MonoBehaviour {
 	}
 	public void CepureAttelosana(bool vertiba)
 	{
-		cepure.SetActive(vertiba);
+		Cepure.SetActive(vertiba);
+	}
+	public void ZobenaAttelosana(bool vertiba)
+	{
+		Zobens.SetActive(vertiba);
 	}
 	public void PaKreisiBins()
 	{
-		JackSparrow.transform.localScale = new Vector2(1, 1);
+		cilveks.transform.localScale = new Vector2(1, 1);
 	}
 
 	public void PaLabiBins()
 	{
-		JackSparrow.transform.localScale = new Vector2(-1, 1);
+		cilveks.transform.localScale = new Vector2(-1, 1);
 	}
 
 	public void izkritosais(int indekss){
@@ -62,18 +65,21 @@ public class AtteluParadisana : MonoBehaviour {
 
 		else if(indekss == 2)
 			kurRadit.GetComponent<Image> ().sprite = koRadit [2];
+		
+		else if(indekss == 3)
+			kurRadit.GetComponent<Image> ().sprite = koRadit [3];
 	}
 
 
-	public void mainitLielumu(){
+	public void mainitPlatumu(){
 		float pasreizejaVertiba = slaideris1.GetComponent<Slider> ().value;
-		kurRadit.transform.localScale = 
-			new Vector2 (1f*pasreizejaVertiba, 1f*pasreizejaVertiba);
+		cilveks.transform.localScale = 
+			new Vector3(1f*pasreizejaVertiba, slaideris2.GetComponent<Slider>().value, 0);
 	}
 
-	public void mainitRotaciju(){
+	public void mainitGarumu(){
 		float pasreizejaVertiba = slaideris2.GetComponent<Slider> ().value;
-		kurRadit.transform.localRotation =
-			Quaternion.Euler (0, 0, pasreizejaVertiba * 360);
+		cilveks.transform.localScale =
+			new Vector3(slaideris1.GetComponent<Slider>().value, 1f*pasreizejaVertiba, 0);
 	}
 }
