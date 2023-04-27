@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Skripti\AinuParsledzejs.cs" />
      <Compile Include="Assets\Skripti\AtteluParadisana.cs" />
+     <Compile Include="Assets\Skripti\MonetuGenerators.cs" />
      <Compile Include="Assets\Skripti\ObjektuParvietosana.cs" />
      <Compile Include="Assets\Skripti\VardaParadisana.cs" />
  <Reference Include="UnityEngine.UI">
